@@ -12,10 +12,10 @@ const Login = ({ onLogin }) => {
           credentials: 'include'
         });
         const data = await response.json();
-        if (data.isAuthenticated) {
+        //if (data.isAuthenticated) {
           onLogin();
           navigate('/home');
-        }
+        //}
       } catch (error) {
         console.error('Error checking auth status:', error);
       }
