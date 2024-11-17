@@ -14,7 +14,7 @@ const Login = ({ onLogin }) => {
         const data = await response.json();
         if (data.isAuthenticated) {
           onLogin();
-          navigate('/home');
+          navigate('https://crm-frontend-nine-omega.vercel.app/home');
         }
       } catch (error) {
         console.error('Error checking auth status:', error);
